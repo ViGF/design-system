@@ -1,13 +1,16 @@
 import { Meta, StoryObj } from '@storybook/react'
+import { ReactNode } from 'react'
 import { Checkbox, CheckboxProps } from "./Checkbox"
 import { Text } from './Text'
 
 export default {
     title: 'Components/Checkbox',
     component: Checkbox,
-    args: {},
+    args: {
+        'aria-label': 'Lembrar-me de mim por 30 dias'
+    },
     decorators: [
-        (Story) => {
+        (Story: () => ReactNode) => {
             return (
                 <div className='flex items-center gap-2'>
                     {Story()}
@@ -16,6 +19,6 @@ export default {
             )
         }
     ]
-} as Meta<CheckboxProps>
+}as Meta<CheckboxProps>
 
 export const Default: StoryObj<CheckboxProps> = {}
