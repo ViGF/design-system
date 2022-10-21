@@ -1,5 +1,5 @@
 # Design System
-Design System desenvolvido com Figma e React usando Storybook + teste com Jest.
+Design System desenvolvido com Figma e React usando Storybook + teste com Jest e CI/CD usando Github Actions.
 
 ## ✨ Tecnologias
 React | Vite | TypeScript | TailwindCSS | Storybook | MSW | Jest
